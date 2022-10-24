@@ -14,6 +14,8 @@ class mahasiswaController extends Controller
     public function index()
     {
         //
+
+        return view("mahasiswa.index");
     }
 
     /**
@@ -24,6 +26,8 @@ class mahasiswaController extends Controller
     public function create()
     {
         //
+
+        return view("mahasiswa.create");
     }
 
     /**
@@ -35,6 +39,8 @@ class mahasiswaController extends Controller
     public function store(Request $request)
     {
         //
+
+        return view("mahasiswa.store");
     }
 
     /**
@@ -46,6 +52,8 @@ class mahasiswaController extends Controller
     public function show($id)
     {
         //
+
+        return view("mahasiswa.show");
     }
 
     /**
@@ -57,6 +65,8 @@ class mahasiswaController extends Controller
     public function edit($id)
     {
         //
+
+        return view("mahasiswa.edit");
     }
 
     /**
@@ -69,6 +79,8 @@ class mahasiswaController extends Controller
     public function update(Request $request, $id)
     {
         //
+
+        return view("mahasiswa.update");
     }
 
     /**
@@ -80,5 +92,7 @@ class mahasiswaController extends Controller
     public function destroy($id)
     {
         //
+
+        return view("mahasiswa.destory");
     }
 }
