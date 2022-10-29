@@ -1,6 +1,7 @@
 <?php
     use App\Models\mahasiswa;
     use App\Models\vjlhmhskrs;
+    use App\Models\vmhskrs;
 ?>
 @extends('layouts.app')
 

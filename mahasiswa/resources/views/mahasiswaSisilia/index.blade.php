@@ -1,6 +1,7 @@
 <?php
     use App\Models\mahasiswa;
     use App\Models\vjlhmhskrss;
+    use App\Models\vmhskrs;
 ?>
 @extends('layouts.app')
 
@@ -27,6 +28,8 @@
         //     echo "<td>".$mahasiswa->nama."</td>";
         //     echo "<td>".$mahasiswa->jurusan."</td>";
         //     echo "<td>".$mahasiswa->tahunMasuk."</td>";
+        //     echo "<td>".$mahasiswa->jenisKelamin."</td>";
+        //     echo "<td>".$mahasiswa->tanggalLahir."</td>";
         //     echo "</tr>";
         // }
         $rows = \DB::select('select studentid, nama, jlhkrs from vjlhmhskrss');
