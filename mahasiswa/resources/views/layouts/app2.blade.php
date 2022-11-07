@@ -58,13 +58,13 @@
             </nav><!-- .navbar -->
 
             <div class="header-social-links">
-                <a href="https://twitter.com/binance?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                <a href="https://twitter.com/sisilia_marcela"
                     class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="https://free.facebook.com/people/Wilbert-Bernard-Lo/100012239225252/?_rdc=1&_rdr"
+                <a href="https://www.facebook.com/sisilia.tan.12"
                     class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/wilbertbernardlo/" class="instagram"><i
+                <a href="https://www.instagram.com/sisilia_marcela/" class="instagram"><i
                         class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/wilbert-bernard-lo-5b8b40211/" class="linkedin"><i
+                <a href="https://www.linkedin.com/in/sisilia-marcela-442809217//" class="linkedin"><i
                         class="bi bi-linkedin"></i></i></a>
             </div>
         </div>
@@ -94,7 +94,7 @@
     <footer id="footer">
         <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong><span>Wilbert Bernard Lo</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Sisilia Marcela</span></strong>. All Rights Reserved
             </div>
         </div>
     </footer><!-- End  Footer -->
@@ -117,5 +117,4 @@
     <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
