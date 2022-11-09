@@ -37,14 +37,15 @@
                 <th>Nama</th>
                 <th>Jurusan</th>
                 <th>Tahun Masuk</th>
-            @foreach ($mahasiswa as $mhs)
-            <tr>
-                <td>{{$mhs->studentID}}</td>
-                <td>{{$mhs->nama}}</td>
-                <td>{{$mhs->jurusan}}</td>
-                <td>{{$mhs->tahunMasuk}}</td>
             </tr>
-            @endforeach
+            @foreach ($mahasiswa as $mhs)
+               <tr>
+               <td>{{$mhs->StudentID}}</td>
+               <td>{{$mhs->Nama}}</td>
+               <td>{{$mhs->Jurusan}}</td>
+               <td>{{$mhs->Tahun_masuk}}</td>
+               </tr>
+           @endforeach
         </table>
 
 @endsection

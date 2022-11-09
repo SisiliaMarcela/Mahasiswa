@@ -14,7 +14,7 @@
             padding: 10px;
         }
     </style>
-    <table style="padding: 10px;">
+    <table style="padding: 10px;" class="table table-bordered">
         <tr>
             <th>Student ID</th>
             <th>Nama</th>

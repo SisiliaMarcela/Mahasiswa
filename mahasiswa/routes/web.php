@@ -42,3 +42,7 @@ Route::controller(krsController::class)->group(function () {
 
 Route::get('/laporan/mahasiswa',[LaporanController::class,'index']);
 Route::get('/laporan/mahasiswa/pdf',[LaporanController::class,'cetak_pdf']);
+Route::resource('admin/mahasiswa', 'App\Http\Controllers\Admin\mahasiswaController');
+Route::resource('admin/mahasiswax', 'App\\Http\\Controllers\\Admin\mahasiswaxController');
+Route::resource('admin/matakuliah', 'App\\Http\\Controllers\\Admin\matakuliahController');
+Route::resource('admin/sertifikat', 'App\\Http\\Controllers\\Admin\sertifikatController');

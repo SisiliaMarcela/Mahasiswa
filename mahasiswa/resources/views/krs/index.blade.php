@@ -17,14 +17,12 @@
             <?php
             $mhss = \DB::select('SELECT studentID,nama,kode_krs,kode_term,kode_matakuliah,nama_matakuliah,sks,totalsks FROM vmhskrs')[0];
             echo "Nama : ".$mhss->Nama."<br>";
-            echo "Jenis Kelamin : ".$mhss->JenisKelamin."<br>";
-            echo "Tanggal Lahir : ".$mhss->TanggalLahir."<br>";
             echo "Student ID : ".$mhss->StudentID."<br>";
             echo "Total Sks : ".$mhss->totalsks."<br><br>";
 
 
        ?>
-    <table style="padding: 10px;">
+    <table style="padding: 10px;" class="table table-bordered">
         <tr>
             <th>No</th>
             <th>Kode Matakuliah</th>
