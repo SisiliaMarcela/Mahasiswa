@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title','Sertifikat')
+@section('title','Dosen')
 
 @section('content')
     <div class="container">
@@ -8,13 +8,13 @@
 
             <div class="col-md-9">
                 <div class="card">
-                    <div class="card-header">Sertifikat</div>
+                    <div class="card-header">Dosen</div>
                     <div class="card-body">
-                        <a href="{{ url('/admin/sertifikat/create') }}" class="btn btn-success btn-sm" title="Add New sertifikat">
+                        <a href="{{ url('/admin/dosen/create') }}" class="btn btn-success btn-sm" title="Add New dosen">
                             <i class="fa fa-plus" aria-hidden="true"></i> Add New
                         </a>
 
-                        <form method="GET" action="{{ url('/admin/sertifikat') }}" accept-charset="UTF-8" class="form-inline my-2 my-lg-0 float-right" role="search">
+                        <form method="GET" action="{{ url('/admin/dosen') }}" accept-charset="UTF-8" class="form-inline my-2 my-lg-0 float-right" role="search">
                             <div class="input-group">
                                 <input type="text" class="form-control" name="search" placeholder="Search..." value="{{ request('search') }}">
                                 <span class="input-group-append">
@@ -31,29 +31,29 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th>#</th><th>StudentID</th><th>Judul Sertifikat</th><th>Penyelenggara</th><th>Actions</th>
+                                        <th>#</th><th>Nama Dosen</th><th>Email Dosen UPH</th><th>Email Dosen Non UPH</th><th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($sertifikat as $item)
+                                @foreach($dosen as $item)
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
-                                        <td>{{ $item->studentID }}</td><td>{{ $item->judulsertifikat }}</td><td>{{ $item->penyelenggara }}</td>
+                                        <td>{{ $item->namaDosen }}</td><td>{{ $item->emailDosenUPH }}</td><td>{{ $item->emailDosenNonUph }}</td>
                                         <td>
-                                            <a href="{{ url('/admin/sertifikat/' . $item->id) }}" title="View sertifikat"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
-                                            <a href="{{ url('/admin/sertifikat/' . $item->id . '/edit') }}" title="Edit sertifikat"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
+                                            <a href="{{ url('/admin/dosen/' . $item->id) }}" title="View dosen"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
+                                            <a href="{{ url('/admin/dosen/' . $item->id . '/edit') }}" title="Edit dosen"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
 
-                                            <form method="POST" action="{{ url('/admin/sertifikat' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
+                                            <form method="POST" action="{{ url('/admin/dosen' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
                                                 {{ method_field('DELETE') }}
                                                 {{ csrf_field() }}
-                                                <button type="submit" class="btn btn-danger btn-sm" title="Delete sertifikat" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+                                                <button type="submit" class="btn btn-danger btn-sm" title="Delete dosen" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
                                             </form>
                                         </td>
                                     </tr>
                                 @endforeach
                                 </tbody>
                             </table>
-                            <div class="pagination-wrapper"> {!! $sertifikat->appends(['search' => Request::get('search')])->render() !!} </div>
+                            <div class="pagination-wrapper"> {!! $dosen->appends(['search' => Request::get('search')])->render() !!} </div>
                         </div>
 
                     </div>

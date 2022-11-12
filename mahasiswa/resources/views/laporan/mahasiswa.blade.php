@@ -25,7 +25,7 @@
             UNIVERSITAS PASTI JAYA<br>
             FAKULTAS ILMU KOMPUTER
         </h1>
-        <h5>Jalan PAsti Ada No.777<br>
+        <h5>Jalan Pasti Ada No.777<br>
             Tlp. 061.777777
         </h5>
         <br>

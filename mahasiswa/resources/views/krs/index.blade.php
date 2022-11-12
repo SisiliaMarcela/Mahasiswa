@@ -2,6 +2,7 @@
     use App\Models\mahasiswa;
     use App\Models\vjlhmhskrs;
     use App\Models\vmhskrs;
+    use App\Models\vmhskrss;
 ?>
 @extends('layouts.app')
 
@@ -22,7 +23,7 @@
 
 
        ?>
-    <table style="padding: 10px;" class="table table-bordered">
+    <table style="padding: 10px;">
         <tr>
             <th>No</th>
             <th>Kode Matakuliah</th>
@@ -35,7 +36,7 @@
         $no=1;
         foreach ($rows as $row) {
             echo "<tr>"; 
-            echo "<td>".$no."</td>";
+            echo "<td>".$row->no."</td>";
             echo "<td>".$row->kode_matakuliah."</td>";
             echo "<td>".$row->nama_matakuliah."</td>";
             echo "<td>".$row->sks."</td>";

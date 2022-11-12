@@ -46,3 +46,4 @@ Route::resource('admin/mahasiswa', 'App\Http\Controllers\Admin\mahasiswaControll
 Route::resource('admin/mahasiswax', 'App\\Http\\Controllers\\Admin\mahasiswaxController');
 Route::resource('admin/matakuliah', 'App\\Http\\Controllers\\Admin\matakuliahController');
 Route::resource('admin/sertifikat', 'App\\Http\\Controllers\\Admin\sertifikatController');
+Route::resource('admin/dosen', 'App\\Http\\Controllers\\Admin\dosenController');
