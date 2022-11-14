@@ -25,7 +25,7 @@
                </p>
             </a>
           </li>
-                   <li class="nav-item">
+            <li class="nav-item">
             <a href="admin/mahasiswax
             " class="nav-link">
               <i class="nav-icon fas fa-eye"></i>
@@ -50,6 +50,15 @@
               <i class="nav-icon fas fa-eye"></i>
               <p>
                 Sertifikat CRUD
+               </p>
+            </a>
+          </li>
+            <li class="nav-item">
+            <a href="admin/sertifikat
+            " class="nav-link">
+              <i class="nav-icon fas fa-eye"></i>
+              <p>
+                Dosen
                </p>
             </a>
           </li>
